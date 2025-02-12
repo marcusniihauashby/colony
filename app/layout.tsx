@@ -42,10 +42,10 @@ export default function RootLayout({
             Colony AI
           </Link>
           <Link href="/about" className="ml-auto ml-4 text-lg">
-            About
+            
           </Link>
           <Link href="/contact" className="ml-4 text-lg">
-            Contact
+            
           </Link>
         </nav>
         {children}

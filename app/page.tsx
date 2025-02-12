@@ -29,26 +29,32 @@ const questrial = Questrial({
 
 export default function Home() {
   return (
-    <div className="">
+    <div className=" min-h-screen h-full bg-gradient-to-b from-[#0E2220] to-[#3E8981]">
       <main className='min-h-screen bg-gradient-to-b from-[#0E2220] to-[#3E8981] text-white'>
         <section className="text-center py-12 md:py-20 px-4">
           <h1 className={`text-white text-3xl md:text-5xl mb-4 ${merriweather.className}`}>
             Your Job Search,<br />
+            <div className="mb-4"></div>
             100% Automated.
           </h1>
-          <p className={`text-white text-lg md:text-xl mb-8 ${neuton.className}`}>Find your dream job, hands-free.</p>
+          <div className="mb-6"></div>
+          <p className={`text-white text-2xl md:text-2xl mb-8 ${neuton.className}`}>Find your dream job, hands-free.</p>
           <a
             href="https://calendly.com/marcusna-berkeley/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-block px-6 py-3 text-white rounded-md transition-colors ${questrial.className}`} style={{backgroundColor: '#417057'}}
+            className={`inline-block px-6 py-3 text-white rounded-lg transition-colors ${questrial.className}`} style={{backgroundColor: '#417057'}}
           >
             Book a Call
           </a>
+          <div className="mb-12"></div>
+
         </section>
+      <div className="mb-12"></div>
 
         <section className="py-12 md:py-16 px-4">
-          <h2 className={`text-white text-2xl md:text-3xl text-center mb-8 md:mb-12 ${neuton.className}`}>
+          <div className='mt-12'></div>
+          <h2 className={`text-white text-2xl md:text-3xl text-center mt-10 mb-8 md:mb-12 ${neuton.className}`}>
             What is your time worth?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
@@ -76,7 +82,7 @@ export default function Home() {
               src="https://www.youtube.com/embed/tuJ2-CPz--o?si=jEeNc4iUuyD077kq"
               title="Colony AI demo video"
               frameBorder="0"
-              loading="lazy"
+              loading="eager"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
@@ -84,20 +90,20 @@ export default function Home() {
         </section>
 
         <section className="py-12 md:py-16 text-center px-4">
-          <h2 className={`text-white text-2xl md:text-3xl mb-6 md:mb-8 ${neuton.className}`}>Ready to take your life back?</h2>
+          <h2 className={`text-white text-5xl md:text-5xl mt-12 mb-12 md:mb-12 ${neuton.className}`}>Ready to take your life back?</h2>
+          <div className="mb-12 mt-12"></div>
           <a
             href="https://calendly.com/marcusna-berkeley/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-block px-6 py-3 text-white rounded-md transition-colors ${questrial.className}`} style={{backgroundColor: '#417057'}}
+            className={`inline-block px-6 py-3 mt-12 mb-12 text-white rounded-md transition-colors ${questrial.className}`} style={{backgroundColor: '#417057'}}
           >
             Book a Call
           </a>
         </section>
+        <p className={`${questrial.className}`}>Copyright 2024-2025 Colony-AI.com</p>
       </main>
-      <footer className="">
-        Copyright 2024 - 2025 Colony-AI.com
-      </footer>
+
     </div>
   );
 }
